@@ -1,9 +1,8 @@
 <div class="container">
-    <p style="font-size: 56px;">
-        Tạo học viên
-    </p>
-    <div class="container-main">
-        <form class="b-form" [formGroup]="addPerson">
+    <p style="font-size: 56px;">Thêm học viên</p>
+    <div class="container_main">
+        <div class="table">
+            <form class="b-form" [formGroup]="addPerson">
             <div class="input-client">
                 <label class="label-client">Họ và tên</label>
                 <tui-input class="input" formControlName="name">
@@ -36,7 +35,13 @@
                 </tui-input>
             </div>
         </form>
+        </div>
 
-        <button>Create</button>
+        <div class="btn">
+            <button  appearance="primary" tuiButton type="button" class="tui-space_right-3 tui-space_bottom-3" size="m" style="margin-top: 1rem;">
+                Create
+            </button>
+        </div>
+
     </div>
 </div>
