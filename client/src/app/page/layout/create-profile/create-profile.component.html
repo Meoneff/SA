@@ -1,0 +1,42 @@
+<div class="container">
+    <p style="font-size: 56px;">
+        Tạo học viên
+    </p>
+    <div class="container-main">
+        <form class="b-form" [formGroup]="addPerson">
+            <div class="input-client">
+                <label class="label-client">Họ và tên</label>
+                <tui-input class="input" formControlName="name">
+                    enter
+                    <input tuiTextfield type="text" />
+                </tui-input>
+            </div>
+
+            <div class="input-client">
+                <label class="label-client">Ngày tinh</label>
+                <tui-input tuiTextfieldSize="m" class="b-form" formControlName="date" [tuiTextfieldCleaner]="true">
+                    enter
+                    <input tuiTextfield type="text" />
+                </tui-input>
+            </div>
+
+            <div class="input-client">
+                <label class="label-client">Email</label>
+                <tui-input class="input" formControlName="email">
+                    enter
+                    <input tuiTextfield type="text" />
+                </tui-input>
+            </div>
+
+            <div class="input-client">
+                <label class="label-client">Số điện thoại</label>
+                <tui-input class="input" formControlName="phone">
+                    enter
+                    <input tuiTextfield type="text" />
+                </tui-input>
+            </div>
+        </form>
+
+        <button>Create</button>
+    </div>
+</div>
